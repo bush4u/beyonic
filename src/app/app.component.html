@@ -1,10 +1,4 @@
-<mat-toolbar color="primary" *ngIf="mdq.matches">
-  <img src="assets/images/logo.svg" style="height: 50px" class="img-fluid" />
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon">
-    <mat-icon svgIcon="avatar-icon"></mat-icon>
-  </button>
-</mat-toolbar>
+<app-mobile-header *ngIf="mdq.matches"></app-mobile-header>
 <mat-drawer-container class="example-container">
   <mat-drawer #drawer mode="side" [opened]="!mdq.matches">
     <app-web-nav></app-web-nav>
