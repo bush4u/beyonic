@@ -1,0 +1,17 @@
+<mat-card class="p-4 mat-elevation-z0">
+  <mat-card-header>
+    <mat-card-title class="card-titlee">Quick actions</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="d-flex justify-content-between">
+    <div
+      class="card-route mr-4 cursor-pointer text-center"
+      *ngFor="let item of channels"
+      [routerLink]="[item.route]"
+    >
+      <div class="card card-block card-route-inner" [routerLink]="item.link">
+        <mat-icon [svgIcon]="item.icon"></mat-icon>
+      </div>
+      <p class="description">{{ item.title }}</p>
+    </div>
+  </mat-card-content>
+</mat-card>

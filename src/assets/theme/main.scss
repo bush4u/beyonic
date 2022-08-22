@@ -1,0 +1,20 @@
+
+@import "~@angular/material/theming";
+@import "colours";
+@include mat-core();
+
+$primary: mat-palette($primary);
+$secondary: mat-palette($secondary);
+$typography: mat-typography-config(
+  $font-family: "Roboto, Open Sans,  sans-serif",
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500),
+);
+
+$custom-theme: mat-light-theme(
+  $primary,
+  $secondary,
+);
+
+@include angular-material-theme($custom-theme);
+@include angular-material-typography($typography);

@@ -1,0 +1,42 @@
+<div class="d-flex flex-column min-vh-100">
+  <div class="row m-2">
+    <div class="logo p-3">
+      <img src="assets/images/logo.svg" class="img-fluid" />
+    </div>
+  </div>
+  <mat-list role="list">
+    <mat-list-item
+      *ngFor="let item of navigationData"
+      role="listitem"
+      [routerLink]="[item.route]"
+      routerLinkActive="active"
+    >
+      <mat-icon [svgIcon]="item.icon" class="me-3"></mat-icon>
+      {{ item.title }}
+    </mat-list-item>
+  </mat-list>
+  <div class="row-fluid ps-4 pt-4">SUPPORT</div>
+  <mat-list role="list">
+    <mat-list-item
+      *ngFor="let item of supportData"
+      role="listitem"
+      [routerLink]="[item.route]"
+      routerLinkActive="active"
+    >
+      <mat-icon [svgIcon]="item.icon" class="me-3"></mat-icon>
+      {{ item.title }}
+    </mat-list-item>
+  </mat-list>
+  <mat-card class="mt-auto text-center" style="background-color: #ededeb">
+    <mat-card-content>
+      <div class="row">
+        <div class="col-4">
+          <mat-icon svgIcon="avatar-icon"></mat-icon>
+        </div>
+        <div class="col-7">
+          <h2>Kizito John</h2>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

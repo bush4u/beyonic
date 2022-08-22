@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="row">
+    <span class="main-title">Hi John,</span>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-5 col-sm-12">
+      <div class="my-slider" #slider1>
+        <div class="card mr-2">
+          <app-account-card [data]="acountCardData"> </app-account-card>
+        </div>
+        <div class="card mr-2">
+          <mat-card class="text-black mat-elevation-z0">
+            <mat-card-content id="dailySalesChart" class="text-black ct-chart">
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-sm-12 d-flex justify-content-center mt-3 mb-2"
+      *ngIf="mdq.matches"
+    >
+      <mat-tab-group>
+        <mat-tab label="Incoming"> Incoming content </mat-tab>
+        <mat-tab label="Outgoing"> Outgoing content </mat-tab>
+      </mat-tab-group>
+    </div>
+    <div class="col-md-7 col-sm-12">
+      <app-quick-actions></app-quick-actions>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-12">
+      <app-transaction-list></app-transaction-list>
+    </div>
+  </div>
+</div>

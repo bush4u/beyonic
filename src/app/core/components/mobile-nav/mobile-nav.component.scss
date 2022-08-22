@@ -1,0 +1,30 @@
+
+
+.footer{
+  position: relative;
+  z-index: 9999;
+}
+
+@supports(position:sticky){
+  .footer{
+    position:sticky;
+    bottom: 0px;
+    margin-left:  0px;
+    margin-right:  0px;
+  }
+}
+
+
+.mobile-icon{
+  border-bottom: solid var(--grey-200) 0.5px;
+  color: var(--grey-800);
+  stroke: var(--grey-800);
+}
+.mobile-active{
+  color: var(--main);
+  stroke: var(--secondary);
+}
+
+.mat-icon svg > path {
+  fill: black !important;
+}

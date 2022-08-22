@@ -28,9 +28,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "src/styles.scss",
+              "node_modules/chartist/dist/index.css",
+              "node_modules/perfect-scrollbar/css/perfect-scrollbar.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/chartist/dist/index.js",
+              "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -96,6 +105,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -103,5 +113,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "0eeb5234-6af4-41f7-a1de-ba2842d47caa"
   }
 }

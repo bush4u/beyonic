@@ -1,0 +1,60 @@
+
+.icon-route {
+  display: inline-block;
+}
+
+.icon-solid {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 18px;
+  border-radius: 20px;
+  background-color: var(--icon-color);
+  border-color: var(--icon-color);
+}
+
+.icon-solid-bd {
+  background-color: transparent;
+  border: solid 2px;
+  border-color: var(--icon-color);
+}
+.icon-dashed-bd {
+  background-color: transparent;
+  border: dashed 2px;
+  border-color: var(--icon-color);
+}
+.icon-route-inner {
+  width: 36px !important;
+  height: 36px !important;
+  border-style: none;
+  border-radius: 18px;
+  border-radius: 20px;
+  background-color: var(--icon-color);
+}
+
+.custom-mat-icon {
+  margin-top: 6px !important;
+  transform: scale(0.9);
+  margin-left: 4px;
+}
+
+.table-card {
+  @media (max-width: 700px) and (min-width: 100px) {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: transparent;
+    border: none !important;
+  }
+}
+
+
+.status {
+  &.pending {
+    color: var(--pending);
+  }
+  &.completed {
+    color: var(--success);
+  }
+  &.failed {
+    color: var(--danger);
+  }
+}

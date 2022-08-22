@@ -1,0 +1,26 @@
+.example-container {
+  width: 100vw;
+  height: 100vh;
+}
+.example-spacer {
+  flex: 0.8 1 auto;
+}
+mat-drawer-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 12px !important;
+  background-color: var(--content) !important;
+}
+
+.drawer-content{
+  margin-left: 10px !important;
+  height: 100vh;
+  width: 100%;
+}
+
+mat-drawer {
+  background-color: var(--nav-main) !important;
+  border: none !important;
+}

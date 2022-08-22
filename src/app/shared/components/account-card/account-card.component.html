@@ -1,0 +1,20 @@
+<mat-card class="detail-card text-white mat-elevation-z0">
+  <mat-card-content>
+    <div class="row">
+      <div class="col-10">
+        <p class="balance">Balance</p>
+        <h2 class="balanceAmount">
+          {{ data.balance }} <small>{{ data.currency }}</small>
+        </h2>
+
+        <small class="mt-4 spent">Spent this week</small>
+        <h2 class="spentAmount">
+          {{ data.amountSpent }} <small>{{ data.currency }}</small>
+        </h2>
+      </div>
+      <div class="col-2 justify-content-right align-self-center">
+        <mat-icon svgIcon="hide-eye"></mat-icon>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

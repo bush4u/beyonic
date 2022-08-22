@@ -1,0 +1,75 @@
+:root {
+  --main: #006fab;
+  --secondary: #0077BA;
+  --icon-color:#CAECFF;
+  --grey-200:#D9D9D8;
+  --grey-800: #2f2f2e;
+  --success: #008f50;
+  --pending: #f8a300;
+  --danger: #d90c34;
+  --content: #F9F9F9;
+  --nav-main: #f3f3f1;
+}
+
+$dark-primary-text: rgba(black, 0.87);
+$dark-secondary-text: rgba(black, 0.54);
+$dark-disabled-text: rgba(black, 0.38);
+$dark-dividers: rgba(black, 0.12);
+$dark-focused: rgba(black, 0.12);
+$light-primary-text: white;
+$light-secondary-text: rgba(white, 0.7);
+$light-disabled-text: rgba(white, 0.5);
+$light-dividers: rgba(white, 0.12);
+$light-focused: rgba(white, 0.12);
+
+$primary: (
+  50: #e0f4fb,
+  100: #b1e2f5,
+  200: #7fcfef,
+  300: #50bce8,
+  400: #2daee5,
+  500: #0ba0e0,
+  600: #0692d2,
+  700: #0080bf,
+  800: #006fab,
+  900: #005089,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $dark-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+  ),
+);
+
+
+$secondary: (
+  50: #eaf8ff,
+  100: #CAECFF,
+  200: #a7e0ff,
+  300: #88d5ff,
+  400: #78caff,
+  500: #72c0ff,
+  600: #6cb1f7,
+  700: #649de1,
+  800: #5d8ccc,
+  900: #4f6ba9,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $dark-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+  ),
+);
+

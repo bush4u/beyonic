@@ -1,0 +1,33 @@
+
+mat-list-item {
+  border-bottom: solid var(--grey-200) 0.5px;
+  color: var(--grey-800);
+  stroke: var(--grey-800);
+}
+
+mat-list-item:hover {
+  cursor: pointer !important;
+  background-color: var(--content) !important;
+}
+.active {
+  color: var(--main);
+  stroke: var(--secondary);
+  border-left: solid 6px var(--secondary);
+  // border: solid 2px ;
+}
+
+
+.footer-route{
+  position: relative;
+  background-color: blue;
+  z-index: 9999;
+}
+
+@supports(position:sticky){
+  .footer-route{
+    position:sticky !important;
+    bottom: 1px !important;
+    margin-left:  0px;
+    margin-right:  0px;
+  }
+}
